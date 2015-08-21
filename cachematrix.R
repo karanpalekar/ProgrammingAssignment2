@@ -1,13 +1,13 @@
 ## below are two functions that are used to create a special object that stores a square invertible matrix 
-##and cache's its inverse  
+## and cache's its inverse  
 
-## The first function, makeCacheMatrix creates a special "matrix" object, which is a list containing function to
+##  The first function, makeCacheMatrix creates a special "matrix" object, which is a list containing function to
 ##1 set the elements of matrix
 ##2 get the elements of matrix
 ##3 set the inverse of matrix
 ##4 get the inverse of matrix
-## The first function makeCacheMatrix will accept a square invertible matrix (x=matrix()) as an input.
 
+##  The first function makeCacheMatrix will accept a square invertible matrix (x=matrix()) as an input.
 makeCacheMatrix <- function(x = matrix()) ## input a square invertible matrix as input to this function. 
 {
   xinv <- NULL
