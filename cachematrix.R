@@ -1,4 +1,5 @@
-## below are two functions that are used to create a special object that stores a square invertible matrix and cache's in inverse  
+## below are two functions that are used to create a special object that stores a square invertible matrix 
+##and cache's its inverse  
 
 ## The first function, makeCacheMatrix creates a special "matrix" object, which is a list containing function to
 ##1 set the elements of matrix
@@ -10,8 +11,8 @@
 makeCacheMatrix <- function(x = matrix()) ## input a square invertible matrix as input to this function. 
 {
   xinv <- NULL
-  setmatrix <- function(y=matrix()) ## function which accepts an input to a new square invertible matrix which will overwrite the existing matrix entered by using lexical scoping feature of R
-   {
+  setmatrix <- function(y=matrix()) ## function which accepts an input to a new square invertible matrix which will overwrite                                  
+   {                                ## the existing matrix entered by using lexical scoping feature of R 
     x <<- y
     xinv <<- NULL
    }
@@ -24,7 +25,8 @@ makeCacheMatrix <- function(x = matrix()) ## input a square invertible matrix as
 }
 
 ## The cacheSolve function calculates the inverse of the matrix created with the above function. 
-##However if the inverse has already been calculated and if the matrix has not changed then it will retrive the inverse from the cache
+## However if the inverse has already been calculated and if the matrix has not changed then it will retrive the inverse 
+## from the cache
 
 cacheSolve <- function(x, ...) 
 {
